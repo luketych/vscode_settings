@@ -1,0 +1,21 @@
+{
+    "window.commandCenter": 1,
+    "editor.accessibilitySupport": "on",
+    "cursorless.hatSizeAdjustment": 15,
+    "mochaExplorer.fullTrace": true,
+    "mochaExplorer.nodePath": "/usr/local/bin/node",
+    "mochaExplorer.pkgFile": "",
+    "mocha.files.glob": "tests/**/*.js",
+    "cursorless.hatEnablement.colors": {
+        "pink": false,
+        "green": false,
+        "yellow": false
+    },
+    "cursorless.hatEnablement.shapes": {
+        "bolt": true
+    },
+    "macros": null,
+    "search.mode": "reuseEditor",
+    "search.defaultViewMode": "tree",
+    "terminal.integrated.macOptionIsMeta": true
+}

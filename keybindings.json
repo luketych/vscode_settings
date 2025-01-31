@@ -1,0 +1,178 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+o",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    
+
+    {
+      "key": "shift+alt+cmd+left",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.focusSideBar",
+          "workbench.action.decreaseViewSize"
+        ]
+      }
+    },
+    {
+      "key": "shift+alt+cmd+right",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.focusSideBar",
+          "workbench.action.increaseViewSize"
+        ]
+      }
+    },
+
+    {
+      "key": "alt+cmd+n",
+      "command": "workbench.action.focusPanel",
+      "when": "!panelFocus"
+    },
+    {
+      "key": "alt+cmd+n",
+      "command": "workbench.action.decreaseViewSize",
+      "when": "panelFocus"
+    },
+    {
+      "key": "alt+cmd+p",
+      "command": "workbench.action.focusPanel",
+      "when": "!panelFocus"
+    },
+    {
+      "key": "alt+cmd+p",
+      "command": "workbench.action.increaseViewSize",
+      "when": "panelFocus"
+    },
+
+
+    {
+      "key": "ctrl+alt+9",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.decreaseViewWidth"
+        ]
+      }
+    },
+    {
+      "key": "shift+ctrl+alt+9",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.increaseViewWidth"
+        ]
+      }
+    },
+    {
+      "key": "ctrl+alt+0",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.decreaseViewHeight"
+        ]
+      }
+    },
+    {
+      "key": "shift+ctrl+alt+0",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.increaseViewHeight"
+        ]
+      }
+    },
+    {
+      "key": "shift+alt+cmd+t",
+      "command": "workbench.action.closeEditorsInOtherGroups"
+    },
+    {
+      "key": "shift+cmd+f shift+cmd+.",
+      "command": "search.action.focusFilesToInclude",
+      "when": "inSearchEditor"
+    },
+    {
+      "key": "shift+cmd+f shift+cmd+,",
+      "command": "search.action.focusFilesToExclude",
+      "when": "inSearchEditor"
+    },
+
+
+    {
+      "comments": "Move cursor to the actual editor file. Useful for when using search.mode = reuseEditor.",
+      "key": "ctrl+alt+n", 
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.focusActiveEditorGroup",
+        ]
+      }
+    },
+
+
+
+
+    {
+      "comments": "Splits 4 active files from 1 pane into 4 panes.",
+      "key": "shift+ctrl+alt+cmd+=",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.editorLayoutTwoByTwoGrid",
+          "workbench.action.focusFirstEditorGroup",
+          "workbench.action.openEditorAtIndex2",
+          "workbench.action.moveEditorToRightGroup",
+          "workbench.action.focusFirstEditorGroup",
+          "workbench.action.openEditorAtIndex2",
+          "workbench.action.focusFirstEditorGroup",
+          "workbench.action.moveEditorToBelowGroup",
+          "workbench.action.focusFirstEditorGroup",
+          "workbench.action.openEditorAtIndex2",
+          "workbench.action.focusFirstEditorGroup",
+          "workbench.action.moveEditorToLastGroup"
+        ]
+      }
+    },
+    {
+      "comments": "Collapses 4 open split-panes into single pane.",
+      "key": "shift+ctrl+alt+cmd+-",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.focusThirdEditorGroup",
+          "workbench.action.moveEditorToFirstGroup",
+          "workbench.action.focusSecondEditorGroup",
+          "workbench.action.moveEditorToFirstGroup",
+          "workbench.action.focusLastEditorGroup",
+          "workbench.action.moveEditorToFirstGroup"
+        ]
+      }
+    },
+
+    {
+      "comments": "Splits 2 active files from 1 pane into 2 side-by-side panes.",
+      "key": "shift+ctrl+alt+cmd+]",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.editorLayoutTwoColumns",
+          "workbench.action.moveEditorToRightGroup",
+          "workbench.action.focusFirstEditorGroup"
+        ]
+      }
+    },
+    {
+      "comments": "Collapses 2 open side-by-side split-panes into single pane.",
+      "key": "shift+ctrl+alt+cmd+[",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.focusLastEditorGroup",
+          "workbench.action.moveEditorToFirstGroup"
+        ]
+      }
+    }
+]
