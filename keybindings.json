@@ -7,7 +7,7 @@
     
 
     {
-      "key": "shift+alt+cmd+left",
+      "key": "shift+alt+cmd+e",
       "command": "runCommands",
       "args": {
         "commands": [
@@ -17,7 +17,7 @@
       }
     },
     {
-      "key": "shift+alt+cmd+right",
+      "key": "shift+alt+cmd+r",
       "command": "runCommands",
       "args": {
         "commands": [
@@ -174,5 +174,167 @@
           "workbench.action.moveEditorToFirstGroup"
         ]
       }
+    },
+    {
+      "key": "cmd+ctrl+down",
+      "command": "workbench.action.terminal.focus",
+      "when": "terminalHasBeenCreated || terminalProcessSupported"
+    },
+
+
+    {
+      "comments": "focus on file explorer, and then move up and down."
+    },
+    {
+      "key": "ctrl+alt+n",
+      "command": "workbench.action.focusSideBar",
+      "when": "!listFocus || panelFocus"
+    }, {
+      "comments": "",
+      "key": "ctrl+alt+p",
+      "command": "workbench.action.focusSideBar" ,
+      "when": "!listFocus"
+    },
+
+
+
+    {
+      "comments": "",
+      "key": "ctrl+alt+n",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "list.focusDown",
+            "list.focusDown",
+        ] 
+      },
+      "when": "listFocus"
+    },
+
+    {
+      "key": "ctrl+alt+p",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "list.focusUp",
+            "list.focusUp",
+        ]
+      },
+      "when": "listFocus"
+    },
+    {
+      "key": "shift+ctrl+alt+n",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown"
+        ] 
+      }
+    },
+    {
+      "key": "shift+ctrl+alt+p",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp"
+        ]
+      }
+    },
+
+
+
+    {
+      "key": "",
+      "comments": "Move terminal back n forth between editor and terminal panel."
+    },
+    {
+      "key": "cmd+alt+j",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "workbench.action.terminal.moveToEditor"
+        ]
+      },
+      "when": "terminal.active"
+    },  
+    {
+      "key": "cmd+alt+j",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "workbench.action.terminal.moveToTerminalPanel"
+        ]
+      },
+      "when": "terminal.active && !panelFocus"
+    },
+
+
+    {
+      "key": "tab",
+      "command": "list.expand",
+      "when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "list.expand",
+      "when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+    },
+    {
+      "key": "ctrl+i",
+      "command": "list.collapse",
+      "when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+    },
+
+
+
+    {
+      "key": "ctrl+t",
+      "command": "tabstronaut.focus"
+    },
+    {
+      "key": "ctrl+alt+t",
+      "command": "tabstronaut.addCurrentTabToGroup"
+    },
+    {
+      "key": "shift+ctrl+alt+t",
+      "command": "tabstronaut.openTabGroupContextMenu"
+    },
+
+
+
+
+    {
+      "key": "",
+      "comments": "Fold and move down a line. And unfold and move down a line."
+    },
+    {
+      "key": "cmd+ctrl+[",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "editor.fold",
+            "cursorDown"
+        ]
+      }
+    },
+    {
+      "key": "cmd+ctrl+]",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+            "editor.unfold",
+            "cursorUp"
+        ]
+      }
     }
+
+
 ]
